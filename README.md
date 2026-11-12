@@ -2,13 +2,23 @@
 
 Registre du budget de confidentialité (ε) sur une blockchain Ethereum privée, développé avec Geth, Truffle et Solidity.
 
+
 ## Présentation
 
+Même anonymisée, une base de données peut révéler des informations personnelles si l'on combine plusieurs requêtes. La confidentialité différentielle limite ce risque en ajoutant du bruit aux résultats, au prix d'un budget de confidentialité **ε** consommé à chaque requête.
+
+**DPLedger** est le registre on-chain de ce budget :
 Le contrat DPLedger suit et limite le budget de confidentialité consommé par les requêtes sur une base de données sensible.
 
+- l'administrateur enregistre un dataset et son budget total ;
+- il autorise les analystes habilités ;
+- chaque requête consomme une part du budget et est inscrite définitivement dans l'historique ;
+- toute modification du budget (augmentation ou remise à zéro) est tracée par un événement.
 L'administrateur enregistre un dataset et autorise les analystes. Chaque requête consomme une part du budget et reste inscrite définitivement dans l'historique. Toute modification du budget est tracée par un événement.
 
+Le contrat ne calcule pas le bruit : il assure uniquement la **comptabilité du budget**, le **contrôle d'accès** et l'**auditabilité** de l'historique.
 Le contrat ne calcule pas le bruit : il gère uniquement le budget, les droits d'accès et l'historique.
+
 
 ## Architecture
 
