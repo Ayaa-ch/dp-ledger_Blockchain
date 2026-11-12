@@ -1,0 +1,19 @@
+{
+  "name": "dp-ledger",
+  "version": "1.0.0",
+  "description": "Registre du budget de confidentialite (Differential Privacy) sur une blockchain Ethereum privee",
+  "private": true,
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "truffle test --network development",
+    "migrate": "truffle migrate --network development",
+    "console": "truffle console --network development"
+  },
+  "devDependencies": {
+    "truffle": "5.11.5"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}

@@ -1,0 +1,32 @@
+# Dépendances
+node_modules/
+
+# Artefacts Truffle
+dp-ledger/build/
+build/
+
+# Données locales de la blockchain et clés privées
+node1/
+keystore_backup/
+password.txt
+*.key
+
+# Binaire Geth (à télécharger séparément)
+geth.exe
+geth
+
+# Logs
+*.log
+npm-debug.log*
+
+# Variables d'environnement
+.env
+.env.*
+
+# Système et éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
